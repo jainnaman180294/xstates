@@ -22,9 +22,7 @@ function Xstates() {
     )
       .then((res) => res.json())
       .then((data) => setStates(data))
-      .then((error) => console.log("Error Fetching States", error));
-
-      console.log("country");
+      .then((error) => console.error("Error Fetching States", error));
   };
 
   const handleStateSelect = (state) => {
@@ -34,7 +32,7 @@ function Xstates() {
     )
       .then((res) => res.json())
       .then((data) => setCity(data))
-      .then((error) => console.log("Error Fetching States", error));
+      .then((error) => console.error("Error Fetching States", error));
   };
 
   const handleCitySelect = (city) => {
