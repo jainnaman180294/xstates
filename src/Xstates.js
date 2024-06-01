@@ -46,29 +46,29 @@ function Xstates() {
       <h1>Select Location</h1>
       <select onChange={(e) => handleCountrySelect(e.target.value)}>
         <option>Select Country</option>
-        {countries.map((country) => {
+        {countries.map((country) => (
           <option key={country} value={country}>
             {country}
           </option>
-        })}
+        ))}
       </select>
 
       <select onChange={(e) => handleStateSelect(e.target.value)}>
         <option>Select State</option>
-        {states.map((state) => {
+        {states.map((state) => (
           <option key={state} value={state}>
             {state}
           </option>
-        })}
+        ))}
       </select>
 
       <select onChange={(e) => handleCitySelect(e.target.value)}>
         <option>Select City</option>
-        {city.map((city) => {
+        {city.map((city) => (
           <option key={city} value={city}>
             {city}
           </option>
-        })}
+        ))}
       </select>
 
       {selectedCity && (
